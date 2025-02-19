@@ -1,4 +1,11 @@
 from scipy.spatial.distance import cdist
+from ase.visualize import view
+import numpy as np
+from pymatgen.core import Structure, Lattice
+from pymatgen.core.surface import SlabGenerator, get_symmetrically_distinct_miller_indices
+from pymatgen.io.cif import CifWriter
+from pymatgen.core.interface import fix_pbc
+from pymatgen.io.xyz import XYZ
 
 def fetch_asio2(filename, asio2_shift = [0,0,0]):
     """
