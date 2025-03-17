@@ -7,3 +7,4 @@ __pycache__/
 # Ignore data (too large)
 production_data/
 
+.DS_Store
