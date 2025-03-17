@@ -13,7 +13,7 @@ This workflow automates:
 
 ## **Repository Structure**  
 ```
-📂 master_thesis/  
+📂 SiSiO2_NNP_workflow/  
 │── src/ (Main source code)  
 │   │── structures/ (Interface generation scripts)  
 │   │   ├── si_sio2_generator.py (Class for Si/SiO2 interface generation)  
@@ -26,22 +26,10 @@ This workflow automates:
 │   │── utils/ (Helper functions)  
 │   │   ├── file_io.py (File reading/writing utilities)  
 │   │   ├── visualization.py (Visualization tools)  
-│── data/ (Stores generated structures and results)  
-│   │── structures/ (CIF, XYZ files)  
-│   │── md_results/ (MD trajectory outputs)  
-│   │── dft_results/ (DFT calculations)  
-│── scripts/ (Standalone execution scripts)  
-│   ├── run_structure_gen.py (Generates an interface)  
-│   ├── run_md.py (Runs an MD simulation)  
-│   ├── run_dft.py (Runs a DFT calculation)  
-│── notebooks/ (Jupyter notebooks for analysis)  
-│── requirements.txt (Dependencies)  
+│── scripts/ (Standalone execution scripts)
+│   │── md/ (Interface generation scripts) 
+│   │   ├── md_runner.py (Runs LAMMPS simulations)  
+│   │   ├── analysis.py (Post-processing tools)  
 │── README.md (Project documentation)  
 │── .gitignore (Files to exclude from version control)  
 ```
-
-## **Installation & Setup**  
-### **1. Clone the Repository**  
-```sh
-git clone git@github.com:ErikKvikne/SiSiO2_NNP_training.git
-cd SiSiO2_NNP_training
